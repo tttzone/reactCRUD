@@ -1,0 +1,30 @@
+{
+  "name": "reactcrud",
+  "version": "1.0.0",
+  "description": "reactCrud",
+  "main": "server.js",
+  "scripts": {
+    "test": "react",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "puneet kankar",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.2",
+    "morgan": "^1.8.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tttzone/reactCRUD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tttzone/reactCRUD/issues"
+  },
+  "homepage": "https://github.com/tttzone/reactCRUD#readme"
+}
