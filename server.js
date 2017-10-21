@@ -7,7 +7,8 @@ var morgan = require("morgan");
 var db = require("./config.js");
 
 var app = express();
-var port = process.env.port || 5000;
+// var port = process.env.port || 5000;
+app.set('port', (process.env.PORT || 5000));
 var srcpath  =path.join(__dirname,'/public') ;
 app.use(express.static('public'));
 app.use(bodyParser.json({limit:'5mb'}));  
@@ -187,6 +188,9 @@ app.get("*",function(req,res){
 })    
 
 //server stat on given port
-app.listen(port,function(){ 
-    console.log("server start on port"+ port); 
-})  
+// app.listen(port,function(){ 
+    // console.log("server start on port"+ port); 
+// })  
+.listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
+});
