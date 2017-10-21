@@ -18,7 +18,10 @@
     "mongoose": "^4.10.2",
     "morgan": "^1.8.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tttzone/reactCRUD.git"
