@@ -31,7 +31,7 @@ var AccountInfo = React.createClass({
       var accountdata = { 
         'username':this.state.username,
         'password':this.state.password, 
-    }
+    };
 	
     $.ajax({
       url: "/api/getLogin",
