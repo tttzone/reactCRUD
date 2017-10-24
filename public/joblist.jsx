@@ -155,7 +155,7 @@ DeleteData(id){
 		<th scope="col"><b>Divisi</b></th>
 		<th scope="col"><b>Job Desc</b></th>
 		<th scope="col"><b>Kota</b></th>
-		<th scope="col"><b>Action</b></th>
+		<th scope="col"><b>Delete</b></th>
 	</tr>
  </thead>
  <tbody>
