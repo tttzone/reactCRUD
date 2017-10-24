@@ -47,6 +47,11 @@ app.get("/home",function(req,res){
     res.sendFile(srcpath +'/home.html');
 })
 
+// call Register page
+app.get("/register",function(req,res){ 
+    res.sendFile(srcpath +'/register.html');
+})
+
 // call Account page
 app.get("/account",function(req,res){ 
     res.sendFile(srcpath +'/account.html');

@@ -27,13 +27,7 @@ var LoginAll = React.createClass({
   },
 
    handleClick: function() {
- 
-   // var Url="";
-	// if(this.state.Buttontxt=="Login"){
-      // Url="/api/getLogin";
-	  // console.log(Url);
-    // }
-    
+  
       var accountdata = { 
         'username':this.state.username,
         'password':this.state.password, 
@@ -59,41 +53,31 @@ var LoginAll = React.createClass({
 
   render: function() {
     return ( 
-      <div  className="container"  style={{marginTop:'50px'}}>
-	  <div className="navbar-header">
-		<a className="navbar-brand" href="/" align="center">Platform Recruitment</a>
-	  </div> 
-  <form>
-    <div className="col-sm-12 col-md-12"  style={{marginLeft:'400px'}}> 
-  <table className="table-bordered">
-     <tbody> 
-    <tr>
-      <td><b>Username</b></td>
-      <td>
-      <input type="text" className="form-control" value={this.state.username}  name="username" onChange={ this.handleChange } />
-      </td>
-    </tr>
-
-    <tr>
-      <td><b>Password</b></td>
-      <td>
-        <input type="password"  className="form-control" value={this.state.password}  name="password" onChange={ this.handleChange } />
-      </td>
-    </tr>
-
-    <tr>
-      <td></td>
-      <td>
-        <input className="btn btn-primary" type="button" value={this.state.Buttontxt} onClick={this.handleClick} />
-      </td>
-    </tr>
-
- </tbody>
-    </table>
-</div>
- 
-</form>        
-      </div>
+      <div className="container" > 
+    	<div className="row">
+			<div className="col-md-6 col-md-offset-3">
+			<div className="navbar-header">
+				<a className="navbar-brand" href="#" align="center">Login Platform Recruitment</a>
+			</div>
+			<form id="login-form" >  
+				<div className="form-group"> 
+					<input type="text" className="form-control" value={this.state.username}  name="username" onChange={ this.handleChange } placeholder="Username" />
+				</div>
+				<div className="form-group">
+					<input type="password"  className="form-control" value={this.state.password}  name="password" onChange={ this.handleChange } placeholder="Password" />
+				</div>  
+				<div className="form-group">
+					<div className="row">
+						<div className="col-sm-6 col-sm-offset-3">
+							<input className="btn btn-primary" type="button" value={this.state.Buttontxt} onClick={this.handleClick} />
+						</div>
+					</div>
+				</div>
+			 
+				</form>        
+			</div>  
+		</div>  
+    </div>
     );
   }
 });

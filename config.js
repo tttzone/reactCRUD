@@ -12,7 +12,7 @@
 
 var mongo = require("mongoose");
 // var db = mongo.connect("mongodb://localhost:27017/account", function(err, response){ lokal
-var db = mongo.connect("mongodb://tttzone:k4rt45ur4@ds227045.mlab.com:27045/account", function(err, response){
+var db = mongo.connect("mongodb://tttzone:k4rt45ur4@ds227045.mlab.com:27045/account", {useMongoClient:true}, function(err, response){
    if(err){ console.log('Failed to connect to ' + db); }
    else{ console.log('Connected to ' + db, ' + ', response); }
 });

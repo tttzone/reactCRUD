@@ -54,35 +54,33 @@ var AccountInfo = React.createClass({
 
   render: function() {
     return ( 
-      <div  className="container"  style={{marginTop:'50px'}}>
-	  <div className="navbar-header"> 
-		<a className="navbar-brand" href="#" align="center">List Account Recruitment</a>
-	  </div> 
-   
-<div className="col-sm-12 col-md-12 "  style={{marginTop:'60px'}} >
- 
- <table className="table table-striped">
- <thead className="thead-dark">
-	<tr>
-		<th scope="col"><b>No</b></th>
-		<th scope="col"><b>FULLNAME</b></th>
-		<th scope="col"><b>USERNAME</b></th>
-		<th scope="col"><b>EMAIL</b></th> 
-	</tr>
- </thead>
- <tbody>
-    {this.state.data1.map((item, index) => (
-        <tr key={index}>
-          <td>{index+1}</td> 
-          <td>{item.fullname}</td>                      
-          <td>{item.username}</td>
-          <td>{item.email}</td>  
-        </tr>
-    ))}
-    </tbody>
-    </table>
-     </div>     
-      </div>
+    <div  className="container"  style={{marginTop:'50px'}}>
+		<div className="navbar-header"> 
+			<a className="navbar-brand" href="#" align="center">List Account Recruitment</a>
+		</div>  
+		<div className="col-sm-12 col-md-12 "  style={{marginTop:'60px'}} > 
+			<table className="table table-striped">
+				<thead className="thead-dark">
+					<tr>
+						<th scope="col"><b>No</b></th>
+						<th scope="col"><b>FULLNAME</b></th>
+						<th scope="col"><b>USERNAME</b></th>
+						<th scope="col"><b>EMAIL</b></th> 
+					</tr>
+				</thead>
+				<tbody>
+					{this.state.data1.map((item, index) => (
+						<tr key={index}>
+						  <td>{index+1}</td> 
+						  <td>{item.fullname}</td>                      
+						  <td>{item.username}</td>
+						  <td>{item.email}</td>  
+						</tr>
+					))}
+				</tbody>
+			</table>
+		</div>     
+    </div>
     );
   }
 });
